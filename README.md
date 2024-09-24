@@ -1,0 +1,1 @@
+# plugins-dibs-easy-for-woocommerce
