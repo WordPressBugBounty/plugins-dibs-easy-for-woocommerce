@@ -43,6 +43,7 @@ class ComposerStaticInit403c16dc602f04db31029ce7a0929d5c
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderData' => __DIR__ . '/..' . '/krokedil/woocommerce/src/OrderData.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderLineData' => __DIR__ . '/..' . '/krokedil/woocommerce/src/OrderLineData.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderMetabox' => __DIR__ . '/..' . '/krokedil/woocommerce/src/OrderMetabox.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderUtility' => __DIR__ . '/..' . '/krokedil/woocommerce/src/OrderUtility.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Order\\Order' => __DIR__ . '/..' . '/krokedil/woocommerce/src/Order/Order.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Order\\OrderCustomer' => __DIR__ . '/..' . '/krokedil/woocommerce/src/Order/OrderCustomer.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Order\\OrderLine' => __DIR__ . '/..' . '/krokedil/woocommerce/src/Order/OrderLine.php',

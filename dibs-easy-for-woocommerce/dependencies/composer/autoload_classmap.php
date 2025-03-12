@@ -28,6 +28,7 @@ return array(
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderData' => $vendorDir . '/krokedil/woocommerce/src/OrderData.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderLineData' => $vendorDir . '/krokedil/woocommerce/src/OrderLineData.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderMetabox' => $vendorDir . '/krokedil/woocommerce/src/OrderMetabox.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\OrderUtility' => $vendorDir . '/krokedil/woocommerce/src/OrderUtility.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Order\\Order' => $vendorDir . '/krokedil/woocommerce/src/Order/Order.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Order\\OrderCustomer' => $vendorDir . '/krokedil/woocommerce/src/Order/OrderCustomer.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Order\\OrderLine' => $vendorDir . '/krokedil/woocommerce/src/Order/OrderLine.php',
