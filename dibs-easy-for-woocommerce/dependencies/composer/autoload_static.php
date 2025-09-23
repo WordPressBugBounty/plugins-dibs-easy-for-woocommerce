@@ -57,6 +57,7 @@ class ComposerStaticInit403c16dc602f04db31029ce7a0929d5c
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineFee' => __DIR__ . '/..' . '/krokedil/woocommerce/src/StoreApi/StoreApiLineFee.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineItem' => __DIR__ . '/..' . '/krokedil/woocommerce/src/StoreApi/StoreApiLineItem.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineShipping' => __DIR__ . '/..' . '/krokedil/woocommerce/src/StoreApi/StoreApiLineShipping.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Subscription' => __DIR__ . '/..' . '/krokedil/woocommerce/src/Subscription.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

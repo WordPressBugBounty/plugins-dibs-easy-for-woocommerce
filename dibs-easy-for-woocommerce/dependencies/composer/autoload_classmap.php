@@ -42,4 +42,5 @@ return array(
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineFee' => $vendorDir . '/krokedil/woocommerce/src/StoreApi/StoreApiLineFee.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineItem' => $vendorDir . '/krokedil/woocommerce/src/StoreApi/StoreApiLineItem.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineShipping' => $vendorDir . '/krokedil/woocommerce/src/StoreApi/StoreApiLineShipping.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Subscription' => $vendorDir . '/krokedil/woocommerce/src/Subscription.php',
 );
