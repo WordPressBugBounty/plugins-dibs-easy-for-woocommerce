@@ -41,25 +41,13 @@ function dibs_easy_maybe_create_order() {
 	$session->set( 'dibs_payment_id', $dibs_easy_order['paymentId'] );
 	$session->set( 'nets_easy_currency', get_woocommerce_currency() );
 	$session->set( 'nets_easy_last_update_hash', $cart->get_cart_hash() );
-	$session->set( 'dibs_cart_contains_subscription', get_dibs_cart_contains_subscription() );
+	$session->set( 'dibs_cart_contains_subscription', Nets_Easy_Subscriptions::cart_has_subscription() );
 	// Set a transient for this paymentId. It's valid in DIBS system for 20 minutes.
 	$payment_id = $dibs_easy_order['paymentId'];
 	set_transient( 'dibs_payment_id_' . $payment_id, $payment_id, 15 * MINUTE_IN_SECONDS ); // phpcs:ignore
 
 	// get dibs easy order.
 	return $dibs_easy_order;
-}
-
-/**
- * Return string(yes) if cart contains subscription product
- *
- * @return string
- */
-function get_dibs_cart_contains_subscription() {
-	if ( ( class_exists( 'WC_Subscriptions_Cart' ) && ( WC_Subscriptions_Cart::cart_contains_subscription() || wcs_cart_contains_renewal() ) ) ) {
-		return 'yes';
-	}
-	return 'no';
 }
 
 /**
@@ -413,8 +401,13 @@ function nets_easy_get_order_by_purchase_id( $payment_id, $date_after = null ) {
 	return $order;
 }
 
+/**
+ * Get all payment method IDs.
+ *
+ * @return array
+ */
 function nets_easy_all_payment_method_ids() {
-	return array( 'dibs_easy', 'nets_easy_card', 'nets_easy_sofort', 'nets_easy_trustly', 'nets_easy_swish', 'nets_easy_ratepay_sepa' );
+	return array( 'dibs_easy', 'nets_easy_card', 'nets_easy_sofort', 'nets_easy_trustly', 'nets_easy_swish', 'nets_easy_ratepay_sepa', 'nets_easy_klarna', 'nets_easy_mobilepay', 'nets_easy_vipps' );
 }
 
 
@@ -449,4 +442,30 @@ function nexi_get_payment_method_title( $order, $method, $type ) {
  */
 function nexi_is_embedded( $checkout_flow ) {
 	return in_array( $checkout_flow, array( 'embedded', 'inline' ), true );
+}
+
+/**
+ * Terminate Nexi session.
+ *
+ * @param string $payment_id The payment ID.
+ * @return void
+ */
+function nexi_terminate_session( $payment_id ) {
+	try {
+		if ( empty( $payment_id ) && isset( WC()->session ) && method_exists( WC()->session, 'get' ) ) {
+			$payment_id = WC()->session->get( 'dibs_payment_id' );
+		}
+
+		if ( empty( $payment_id ) ) {
+			Nets_Easy_Logger::log( 'No payment ID provided for session termination.' );
+			return;
+		}
+
+		$response = Nets_Easy()->api->terminate_nets_easy_session( $payment_id );
+		if ( is_wp_error( $response ) ) {
+			Nets_Easy_Logger::log( 'Error terminating Nexi session: ' . $response->get_error_message() );
+		}
+	} catch ( Exception $e ) {
+		Nets_Easy_Logger::log( 'Exception when terminating Nexi session: ' . $e->getMessage() );
+	}
 }

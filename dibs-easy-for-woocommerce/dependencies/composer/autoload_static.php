@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit403c16dc602f04db31029ce7a0929d5c
 {
     public static $prefixLengthsPsr4 = array (
-        'K' => 
+        'K' =>
         array (
             'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\' => 46,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\' => 
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\' =>
         array (
             0 => __DIR__ . '/..' . '/krokedil/woocommerce/src',
         ),
