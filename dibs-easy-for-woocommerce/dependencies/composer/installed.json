@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "krokedil\/woocommerce",
-            "version": "1.9.0",
-            "version_normalized": "1.9.0.0",
+            "version": "1.9.1",
+            "version_normalized": "1.9.1.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/krokedil\/woocommerce.git",
-                "reference": "5867595f76b16f17d971d7e668f6cd3a7038ab0a"
+                "reference": "4f87f20eaa89ebdba21868011e395dacdecd06df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/krokedil\/woocommerce\/zipball\/5867595f76b16f17d971d7e668f6cd3a7038ab0a",
-                "reference": "5867595f76b16f17d971d7e668f6cd3a7038ab0a",
+                "url": "https:\/\/api.github.com\/repos\/krokedil\/woocommerce\/zipball\/4f87f20eaa89ebdba21868011e395dacdecd06df",
+                "reference": "4f87f20eaa89ebdba21868011e395dacdecd06df",
                 "shasum": ""
             },
             "require-dev": {
@@ -21,7 +21,7 @@
                 "php-stubs\/woocommerce-stubs": "^7.2",
                 "php-stubs\/wordpress-stubs": "^6.1"
             },
-            "time": "2025-08-29T14:16:04+00:00",
+            "time": "2025-12-18T12:51:08+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -45,7 +45,7 @@
             ],
             "description": "A library package for Krokedils plugins that contains helper methods when working with WooCommerce.",
             "support": {
-                "source": "https:\/\/github.com\/krokedil\/woocommerce\/tree\/1.9.0",
+                "source": "https:\/\/github.com\/krokedil\/woocommerce\/tree\/1.9.1",
                 "issues": "https:\/\/github.com\/krokedil\/woocommerce\/issues"
             },
             "install-path": "..\/krokedil\/woocommerce"
