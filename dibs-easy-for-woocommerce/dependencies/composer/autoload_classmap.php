@@ -7,6 +7,16 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Addons' => $vendorDir . '/krokedil/settings-page/src/Addons.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Gateway' => $vendorDir . '/krokedil/settings-page/src/Gateway.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Navigation' => $vendorDir . '/krokedil/settings-page/src/Navigation.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Page' => $vendorDir . '/krokedil/settings-page/src/Page.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\SettingsPage' => $vendorDir . '/krokedil/settings-page/src/SettingsPage.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Support' => $vendorDir . '/krokedil/settings-page/src/Support.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Traits\\Layout' => $vendorDir . '/krokedil/settings-page/src/Traits/Layout.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Traits\\Sidebar' => $vendorDir . '/krokedil/settings-page/src/Traits/Sidebar.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Traits\\Singleton' => $vendorDir . '/krokedil/settings-page/src/Traits/Singleton.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\Traits\\Subsection' => $vendorDir . '/krokedil/settings-page/src/Traits/Subsection.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Base' => $vendorDir . '/krokedil/woocommerce/src/Base.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Cart\\Cart' => $vendorDir . '/krokedil/woocommerce/src/Cart/Cart.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Cart\\CartCustomer' => $vendorDir . '/krokedil/woocommerce/src/Cart/CartCustomer.php',
