@@ -22,6 +22,15 @@ class ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Krokedil\\Nexi\\PaymentMethods\\BaseGateway' => __DIR__ . '/../..' . '/src/PaymentMethods/BaseGateway.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Card' => __DIR__ . '/../..' . '/src/PaymentMethods/Card.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Klarna' => __DIR__ . '/../..' . '/src/PaymentMethods/Klarna.php',
+        'Krokedil\\Nexi\\PaymentMethods\\MobilePay' => __DIR__ . '/../..' . '/src/PaymentMethods/MobilePay.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Ratepay_Sepa' => __DIR__ . '/../..' . '/src/PaymentMethods/Ratepay_Sepa.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Sofort' => __DIR__ . '/../..' . '/src/PaymentMethods/Sofort.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Swish' => __DIR__ . '/../..' . '/src/PaymentMethods/Swish.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Trustly' => __DIR__ . '/../..' . '/src/PaymentMethods/Trustly.php',
+        'Krokedil\\Nexi\\PaymentMethods\\Vipps' => __DIR__ . '/../..' . '/src/PaymentMethods/Vipps.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

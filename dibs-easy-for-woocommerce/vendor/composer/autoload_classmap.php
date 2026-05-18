@@ -7,4 +7,13 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Krokedil\\Nexi\\PaymentMethods\\BaseGateway' => $baseDir . '/src/PaymentMethods/BaseGateway.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Card' => $baseDir . '/src/PaymentMethods/Card.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Klarna' => $baseDir . '/src/PaymentMethods/Klarna.php',
+    'Krokedil\\Nexi\\PaymentMethods\\MobilePay' => $baseDir . '/src/PaymentMethods/MobilePay.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Ratepay_Sepa' => $baseDir . '/src/PaymentMethods/Ratepay_Sepa.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Sofort' => $baseDir . '/src/PaymentMethods/Sofort.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Swish' => $baseDir . '/src/PaymentMethods/Swish.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Trustly' => $baseDir . '/src/PaymentMethods/Trustly.php',
+    'Krokedil\\Nexi\\PaymentMethods\\Vipps' => $baseDir . '/src/PaymentMethods/Vipps.php',
 );
