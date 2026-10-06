@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'krokedil/dibs-easy-for-woocommerce',
-        'pretty_version' => '2.14.7',
-        'version' => '2.14.7.0',
-        'reference' => '78e1a98ee4d087683be6342721497405a3ebf66d',
+        'pretty_version' => '2.14.8',
+        'version' => '2.14.8.0',
+        'reference' => '0ca3c3f9c3206149a0153239fd90ce22b4f55890',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'krokedil/dibs-easy-for-woocommerce' => array(
-            'pretty_version' => '2.14.7',
-            'version' => '2.14.7.0',
-            'reference' => '78e1a98ee4d087683be6342721497405a3ebf66d',
+            'pretty_version' => '2.14.8',
+            'version' => '2.14.8.0',
+            'reference' => '0ca3c3f9c3206149a0153239fd90ce22b4f55890',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
