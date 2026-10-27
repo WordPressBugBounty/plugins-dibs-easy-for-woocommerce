@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Krokedil\\Nexi\\Logging\\LogMasking' => $baseDir . '/src/Logging/LogMasking.php',
     'Krokedil\\Nexi\\PaymentMethods\\BaseGateway' => $baseDir . '/src/PaymentMethods/BaseGateway.php',
     'Krokedil\\Nexi\\PaymentMethods\\Card' => $baseDir . '/src/PaymentMethods/Card.php',
     'Krokedil\\Nexi\\PaymentMethods\\Klarna' => $baseDir . '/src/PaymentMethods/Klarna.php',

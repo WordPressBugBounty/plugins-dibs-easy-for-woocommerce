@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\' => array($vendorDir . '/krokedil/wp-api/src'),
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\' => array($vendorDir . '/krokedil/woocommerce/src'),
     'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\' => array($vendorDir . '/krokedil/settings-page/src'),
 );

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f
+class ComposerStaticInit5edd1bd749733fe3894f7b01c20333fd
 {
     public static $prefixLengthsPsr4 = array (
         'K' =>
@@ -22,6 +22,7 @@ class ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Krokedil\\Nexi\\Logging\\LogMasking' => __DIR__ . '/../..' . '/src/Logging/LogMasking.php',
         'Krokedil\\Nexi\\PaymentMethods\\BaseGateway' => __DIR__ . '/../..' . '/src/PaymentMethods/BaseGateway.php',
         'Krokedil\\Nexi\\PaymentMethods\\Card' => __DIR__ . '/../..' . '/src/PaymentMethods/Card.php',
         'Krokedil\\Nexi\\PaymentMethods\\Klarna' => __DIR__ . '/../..' . '/src/PaymentMethods/Klarna.php',
@@ -36,9 +37,9 @@ class ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitd6e9bd8dcf1e37ac86f27ac087b1047f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5edd1bd749733fe3894f7b01c20333fd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5edd1bd749733fe3894f7b01c20333fd::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit5edd1bd749733fe3894f7b01c20333fd::$classMap;
 
         }, null, ClassLoader::class);
     }

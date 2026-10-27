@@ -53,4 +53,9 @@ return array(
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineItem' => $vendorDir . '/krokedil/woocommerce/src/StoreApi/StoreApiLineItem.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineShipping' => $vendorDir . '/krokedil/woocommerce/src/StoreApi/StoreApiLineShipping.php',
     'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Subscription' => $vendorDir . '/krokedil/woocommerce/src/Subscription.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\FieldMasker' => $vendorDir . '/krokedil/wp-api/src/FieldMasker.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\KeyMasker' => $vendorDir . '/krokedil/wp-api/src/KeyMasker.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\Logger' => $vendorDir . '/krokedil/wp-api/src/Logger.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\Masking' => $vendorDir . '/krokedil/wp-api/src/Masking.php',
+    'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\Request' => $vendorDir . '/krokedil/wp-api/src/Request.php',
 );

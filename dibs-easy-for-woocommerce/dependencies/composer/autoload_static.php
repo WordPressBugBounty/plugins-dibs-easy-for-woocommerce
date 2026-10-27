@@ -4,17 +4,22 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4c5f64d74770e19852bb4ad33e95b6ad
+class ComposerStaticInit234c4dc8370438285b141a97847daf97
 {
     public static $prefixLengthsPsr4 = array (
         'K' =>
         array (
+            'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\' => 40,
             'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\' => 46,
             'KrokedilNexiCheckoutDeps\\Krokedil\\SettingsPage\\' => 47,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/krokedil/wp-api/src',
+        ),
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\' =>
         array (
             0 => __DIR__ . '/..' . '/krokedil/woocommerce/src',
@@ -73,14 +78,19 @@ class ComposerStaticInit4c5f64d74770e19852bb4ad33e95b6ad
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineItem' => __DIR__ . '/..' . '/krokedil/woocommerce/src/StoreApi/StoreApiLineItem.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\StoreApi\\StoreApiLineShipping' => __DIR__ . '/..' . '/krokedil/woocommerce/src/StoreApi/StoreApiLineShipping.php',
         'KrokedilNexiCheckoutDeps\\Krokedil\\WooCommerce\\Subscription' => __DIR__ . '/..' . '/krokedil/woocommerce/src/Subscription.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\FieldMasker' => __DIR__ . '/..' . '/krokedil/wp-api/src/FieldMasker.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\KeyMasker' => __DIR__ . '/..' . '/krokedil/wp-api/src/KeyMasker.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\Logger' => __DIR__ . '/..' . '/krokedil/wp-api/src/Logger.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\Masking' => __DIR__ . '/..' . '/krokedil/wp-api/src/Masking.php',
+        'KrokedilNexiCheckoutDeps\\Krokedil\\WpApi\\Request' => __DIR__ . '/..' . '/krokedil/wp-api/src/Request.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4c5f64d74770e19852bb4ad33e95b6ad::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4c5f64d74770e19852bb4ad33e95b6ad::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4c5f64d74770e19852bb4ad33e95b6ad::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit234c4dc8370438285b141a97847daf97::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit234c4dc8370438285b141a97847daf97::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit234c4dc8370438285b141a97847daf97::$classMap;
 
         }, null, ClassLoader::class);
     }
