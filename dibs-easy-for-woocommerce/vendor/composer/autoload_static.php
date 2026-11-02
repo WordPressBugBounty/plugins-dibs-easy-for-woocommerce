@@ -22,6 +22,7 @@ class ComposerStaticInit5edd1bd749733fe3894f7b01c20333fd
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Krokedil\\Nexi\\Checkout\\StalePaymentSession' => __DIR__ . '/../..' . '/src/Checkout/StalePaymentSession.php',
         'Krokedil\\Nexi\\Logging\\LogMasking' => __DIR__ . '/../..' . '/src/Logging/LogMasking.php',
         'Krokedil\\Nexi\\PaymentMethods\\BaseGateway' => __DIR__ . '/../..' . '/src/PaymentMethods/BaseGateway.php',
         'Krokedil\\Nexi\\PaymentMethods\\Card' => __DIR__ . '/../..' . '/src/PaymentMethods/Card.php',
